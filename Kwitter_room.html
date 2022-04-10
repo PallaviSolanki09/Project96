@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Let-Chat-Web-App</title>
+        <link rel="stylesheet" href="Kwitter_room.css">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Praise&family=Rampart+One&display=swap" rel="stylesheet">
+    </head>
+    <body id="chat">
+        <div class="container">
+            <button class="btn btn-link" id="logout" onclick="logout()">Logout</button>
+                <center>
+                    <h1 id="heading">Chat Box
+                        <sup>
+                            <img class="mesg" src="m2 copy.png">
+                        </sup>
+                    </h1>
+                    <h3 id="welcome"></h3>
+                    <div class="form-group input_div_room_page">
+                        <label>#Add Room:</label>
+                        <input type="text" id="room_name" class="form-control" placeholder="#Room Name">
+                    </div>
+                    <button class="btn btn-link,btn btn-primary" onclick="addRoom()" id="add_room">#Add Room</button>
+                    <h3 class="color_white">#TRENDINGROOMS</h3>
+                <div id="output"></div>
+                </center>
+             </div>
+             <script src="Kwitter_room.js"></script>
+        </body>
+</html>

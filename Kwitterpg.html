@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Let-Chat-Web-App</title>
+        <link rel="stylesheet" href="Kwitterpg.css">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Praise&family=Rampart+One&display=swap" rel="stylesheet">
+    </head>
+  <body id="chat"> 
+    <div class="container">
+        <button class="btn btn-link" id="logout" onclick="logout()">Logout</button>
+        <center>
+            <h1 id="heading">
+                Kwitter
+                <sup>
+                    <img src="m2 copy.png">
+                </sup>
+            </h1>
+            <div id="output" style="text-align: left; margin-bottom: 70px;">
+
+            </div>
+        </center>
+    </div>
+    <center>
+        <div class="input_div_message_page">
+            <label>Send : </label> 
+            <input type="text" id="message" class="form-control" placeholder="Message"><br>
+            <button onclick="send()" class="btn btn-success">Send</button>
+        </div>
+    </center>
+    <script src="kwitterpg.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+#chat{
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/806/375/small/abstract-pink-watercolor-background-vector.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+#heading{
+    font-size: 70px;
+    font-family: 'Rampart One', cursive;
+    font-style: italic;
+    color:rgb(0, 164, 179);
+}
+
+
+#Start_btn{
+    width: 15%;
+    height: 5%;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    text-shadow: 5px 5px 10px black;
+}
+
+#Start_btn:hover{
+    width: 20%;
+    height: 5%;
+    background-color: rgb(0, 218, 218);
+    color: black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 15px 20px rgb(152, 155, 155);
+    border-width: 3px;
+    font-size: 23px;
+}
